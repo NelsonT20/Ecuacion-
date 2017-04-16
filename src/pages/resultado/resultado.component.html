@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Resultado
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+
+  <ion-item>
+    <ion-label floating>El valor de x1</ion-label>
+    <ion-textarea [(ngModel)]="valor1" [ngModelOptions]="{standalone: true}"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>El valor de x2</ion-label>
+    <ion-textarea [(ngModel)]="valor2" [ngModelOptions]="{standalone: true}"></ion-textarea>
+  </ion-item>
+  
+
+    <div padding>
+      <button ion-button round (click)="goBack()">Regresar</button>
+    </div>
+
+</ion-list>
+</ion-content>

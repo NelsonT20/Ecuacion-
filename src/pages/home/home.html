@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ecuacion de 2° grado
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="Calcular()">
+
+      
+        <ion-item>
+          <ion-label floating>Ingrese el valor de a</ion-label>
+          <ion-input type="number" [(ngModel)]="valor1" name="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Ingrese el valor de b</ion-label>
+          <ion-input type="number" [(ngModel)]="valor2" name="valor"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Ingrese el valor de c</ion-label>
+          <ion-input type="number" [(ngModel)]="valor3" [ngModelOptions]="{standalone: true}"></ion-input>
+        </ion-item>
+
+        
+
+          <div padding>
+            <!--<button ion-button round (click)="Calcular()">Calcular</button>-->
+            <button ion-button round type="submit" >Calcular</button>
+          </div>
+          
+      
+
+  </form>
+</ion-content>
